@@ -1,0 +1,142 @@
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 10vh;
+    background: 0c0a4e;
+    color: white;
+    animation-duration: 3s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    border-radius: 10px;
+}
+
+a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 14px 16px;
+    border: 1px solid white;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    background-color: rgb(22, 22, 62);
+    animation-duration: 3s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+
+a:hover{
+    background-color: rgb(234, 231, 238);
+    color: rgb(30, 30, 77);
+    border: 1px solid rgb(30, 30, 77);
+}
+
+@keyframes aparecer {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
+h1{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    animation-name: aparecer;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+img{
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    width: 23%;
+    height: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    border: 1px solid rgb (2, 45, 216);
+    background-color: rgb (155, 142, 237);
+}
+
+img:hover{
+    transform: scale(1.1);
+    border: 1px solid rgb(0, 0, 0);
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+    border-radius: 20px;
+    border: 1px solid rgb(2, 45, 216);
+    background-color: rgb(244, 244, 244);
+}
+
+/* Estilos del contenedor */
+.container {
+    display: flex; /* Utiliza flexbox para alinear las imágenes en fila */
+    justify-content: center ; /* Centra las imágenes horizontalmente */
+    flex-wrap: wrap px; /* Permite que las imágenes se envuelvan en filas si no hay suficiente espacio */
+    gap: 15px; /* Espaciado entre las imágenes */
+    padding: 20px; /* Espaciado interno del contenedor */
+}
+
+/* Estilo de las imágenes */
+.image {
+    max-width: 100px; /* Asegura que las imágenes no superen el tamaño del contenedor */
+    height: auto; /* Mantiene la proporción de aspecto de las imágenes */
+    border-radius: 8px; /* Bordes redondeados para las imágenes */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar profundidad */
+    transition: transform 0.3s; /* Transición suave para efectos al pasar el mouse */
+}
+
+/* Efecto hover en las imágenes */
+.image:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño al pasar el mouse */
+}
+
+body {
+    min-height: 100vh; /* Asegura que el fondo cubra toda la pantalla */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    overflow: hidden; /* Evita el desplazamiento si el fondo es mayor */
+    color: #ffffff; /* Color del texto */
+    background: linear-gradient(45deg,#0c0a4e, #6a11cb, #0c0a4e, #ffffff, #2575fc); /* Degradado inicial */
+    background-size: 300% 300%; /* Tamaño de fondo para animación */
+    animation: fondoDesplazamiento 20s ease infinite; /* Animación del fondo */
+}
+
+
+/* Estilos generales */
+body {
+    font-size: 16px;
+}
+
+/* Para pantallas más pequeñas */
+@media (max-width: 600px) {
+    body {
+        font-size: 14px; /* Reduce el tamaño de la fuente */
+    }
+}
+
+/* Para pantallas más grandes */
+@media (min-width: 601px) {
+    body {
+        font-size: 18px; /* Aumenta el tamaño de la fuente */
+    }
+}
+
+
+img {
+    max-width: 100%;
+    height: auto; /* Mantiene la proporción de la imagen */
+}
